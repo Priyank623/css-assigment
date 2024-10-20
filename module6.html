@@ -1,0 +1,116 @@
+
+
+
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            height: 50px;
+        }
+        .header .left {
+            background-color: #000080;
+            color: white;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header .right {
+            background-color: #FF6347;
+            color: white;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero {
+            background-color: #4682B4;
+            color: white;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .main {
+            background-color: #000080;
+            color: white;
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .image {
+            background-color: #AFEEEE;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .extra {
+            background-color: #3CB371;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner {
+            background-color: #FFD700;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
+
+        @media (max-width:760px) {
+            .header {
+                flex-direction: column; 
+                height: auto;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .main, .image, .extra {
+                flex: none;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">HEADER</div>
+            <div class="right">MENU</div>
+        </div>
+        <div class="hero">HERO</div>
+        <div class="content">
+            <div class="main">MAIN</div>
+            <div class="sidebar">
+                <div class="image">IMAGE</div>
+                <div class="extra">EXTRA</div>
+            </div>
+        </div>
+        <div class="banner">BANNER</div>
+    </div>
+</body>
+</html>
